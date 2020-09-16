@@ -7,5 +7,5 @@ if(have_posts()) :
   echo '</div>';
   echo '<button class="load-more-posts">Load More</button>';
 else :
-  echo '<h3>No Searches Found</h3>';
+  echo '<h3>No Posts Found</h3>';
 endif;
