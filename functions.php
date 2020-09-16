@@ -19,16 +19,6 @@ function unique_loadmore_ajax_handler(){
 	$args['paged'] = $_POST['page'] + 1; // we need next page to be loaded
 	$args['post_status'] = 'publish';
   $args['post_type'] = ($_POST['post_type']);
-  $args['tax_query'] = array(
-      'relation' => 'OR',
-      array(
-          'taxonomy' => 'gc_post_type',
-          'field' => 'slug',
-          'terms' => 'voices-from-the-network',
-          'operator' => 'NOT IN'
-      )
-  );
-
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
 
