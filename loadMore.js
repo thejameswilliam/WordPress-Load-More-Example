@@ -1,3 +1,4 @@
+//This code can be placed in your main scripts file, but ideally it's only loaded where it's needed. So, this should be enquied on the archive/template that utilizes laod more buttons. 
 (function( root, $, undefined ) {
 	"use strict";
 

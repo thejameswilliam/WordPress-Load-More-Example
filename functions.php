@@ -1,4 +1,5 @@
 <?php
+//Put this code into functions.php
 
 wp_register_script('unique-load-more', get_template_directory_uri() . '/loadMore.js', array('jquery'), THEME_VERSION, true);
 wp_enqueue_script('unique-load-more');
@@ -34,7 +35,7 @@ function unique_loadmore_ajax_handler(){
 	if( have_posts() ) :
 		// run the loop
 		while( have_posts() ): the_post();
-			get_template_part( 'loop-post' );
+			get_template_part( 'loop' );
 		endwhile;
 
 	endif;
